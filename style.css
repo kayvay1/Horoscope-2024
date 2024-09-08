@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-image: url(./img/astrology.png); */
+    /* background-repeat: no-repeat; */
+}
+header{
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 3px 3px grey;
+}
+
+nav{
+    padding: 10px 10px;
+    margin: auto;
+    width: 80%;
+    /* background-color: orangered; */
+   
+    display: flex;
+    justify-content: space-between;
+}
+.lefthead{
+    width: auto;
+}
+.lefthead>h1{
+    color: orangered;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.righthead{
+    width: auto;
+}
+.righthead>ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.righthead>ul>li{
+    list-style: none;   
+    margin: 0px 10px; 
+    text-align: center;
+}
+.righthead>ul>li>a{
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+    color: orangered;
+}
+
+.home-section{
+    width: 100%;
+}
+.home-section>.inputcontainer{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    padding: 10px 20px;
+}
+.home-section>.inputcontainer>h3{
+    padding: 10px 5px;
+    margin: 10px 0px;
+}
+.home-section>.inputcontainer>input{
+    padding: 10px 20px;
+    width: 250px;
+}
+.home-section>.inputcontainer>button{
+    padding: 10px 20px;
+}
+
+.rashi-container{
+    width: 95%;
+    margin: auto;
+}
+#Rashinameheading{
+    padding: 20px 0;
+}
+#rashipara{
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+input{
+    outline: none;
+    border: none;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.301), inset -10px -10px 30px rgba(255, 255, 255, 0.717);
+}
+#inputButtion{
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+.loder{
+    width: 50%;
+    margin: auto;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.loder>span{
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+    /* background-color: blue; */
+    animation: lodeing 2s ease alternate-reverse infinite;
+}
+.loder>span:nth-child(1){
+    animation-delay: 0.22s;
+}
+.loder>span:nth-child(2){
+    animation-delay:  0.44s;
+}
+.loder>span:nth-child(3){
+    animation-delay:  0.66s;
+}
+.loder>span:nth-child(4){
+    animation-delay: 0.88s;
+}
+.loder>span:nth-child(5){
+    animation-delay: 1.10s;
+}
+.loder>span:nth-child(6){
+    animation-delay: 1.32s;
+}
+.loder>span:nth-child(7){
+    animation-delay: 1.54s;
+}
+.loder>span:nth-child(8){
+    animation-delay: 1.76s;
+}
+.loder>span:nth-child(9){
+    animation-delay: 1.98s;
+}
+@keyframes lodeing {
+    100%{
+        background-color: orangered;
+    }    
+}
+
+
+footer{
+    width: 100%;
+    background-color: orangered;
+    padding: 30px 5px;
+}
+
+.footermain{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footleft{
+    flex-basis: 50%;
+    padding: 10px 10px;
+    color: white;
+}
+.footleft>h4{
+    padding: 10px 0px;
+}
+.footright{
+    flex-basis: 50%;
+    padding: 10px 10px;
+    text-align: center;
+}
+.footright>ul{}
+.footright>ul>li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.footright>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+footer>p{
+    text-align: center;
+    color: white;
+}
+
+
+.righthead>i{
+    display: none;
+}
+
+@media screen and (max-width: 892px) {
+    .righthead>ul{
+        display: none;
+    }    
+    .righthead>i{
+        display: inline-block;
+    }
+    
+}
